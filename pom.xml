@@ -29,8 +29,8 @@
 
     <scm>
         <connection>scm:git:git://github.com/ak2484/demo.git</connection>
-        <developerConnection>scm:git:ssh://github.com:ak2484/demo.git</developerConnection>
-        <url>https://github.com/ak2484/demo/tree/main</url>
+        <developerConnection>scm:git:ssh://github.com/ak2484/demo.git</developerConnection>
+        <url>https://github.com/ak2484/demo/tree/master</url>
     </scm>
 
     <properties>
