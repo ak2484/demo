@@ -1,0 +1,9 @@
+{
+"name": "gpgmejson",
+"description": "Javascript-binding for gnupg",
+"path": "C:\\Akash Practice\\Training Notes\\Java\\AdvanceJava\\20-02-2026\\Maven\\demo\\bin\\gpgme-json.exe",
+"type": "stdio",
+"allowed_origins": [
+	"chrome-extension://dgcbddhdhjppfdfjpciagmmibadmoapc/"
+]
+}

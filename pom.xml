@@ -3,14 +3,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.akash</groupId>
-    <artifactId>demo</artifactId>
+    <groupId>io.github.ak2484</groupId>
+    <artifactId>spring-boot-clean-response-starter</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>demo</name>
-    <description>A Spring Boot application with PostgreSQL and MongoDB support</description>
-    <url>https://github.com/akash/demo</url>
+    <name>spring-boot-clean-response-starter</name>
+    <description>
+        Spring Boot starter that automatically wraps API responses in a clean standard structure with global exception
+        handling.
+    </description>
+    <url>https://github.com/ak2484/demo</url>
 
     <licenses>
         <license>
@@ -28,10 +31,18 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/ak2484/demo.git</connection>
-        <developerConnection>scm:git:ssh://github.com/ak2484/demo.git</developerConnection>
-        <url>https://github.com/ak2484/demo/tree/master</url>
+        <connection>scm:git:git://github.com/ak2484/spring-boot-clean-response-starter.git</connection>
+        <developerConnection>scm:git:ssh://github.com/ak2484/spring-boot-clean-response-starter.git</developerConnection>
+        <url>https://github.com/ak2484/spring-boot-clean-response-starter</url>
     </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>Maven Central</name>
+            <url>https://central.sonatype.com/api/v1/publisher/deployments</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -51,6 +62,30 @@
     </dependencyManagement>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>6.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>3.4.0</version>
+            <optional>true</optional>
+        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -107,7 +142,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.6</version>
+                <version>3.2.4</version>
                 <executions>
                     <execution>
                         <id>sign-artifacts</id>
@@ -117,6 +152,11 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <signer>gpg</signer>
+                    <keyname>${gpg.keyname}</keyname>
+                    <passphrase>${gpg.passphrase}</passphrase>
+                </configuration>
             </plugin>
         </plugins>
     </build>
