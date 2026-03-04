@@ -1,0 +1,73 @@
+############################
+# Maven
+############################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+############################
+# IDE - IntelliJ IDEA
+############################
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+############################
+# IDE - Eclipse
+############################
+.project
+.classpath
+.settings/
+.springBeans
+
+############################
+# IDE - VS Code
+############################
+.vscode/
+
+############################
+# OS Files
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# Logs
+############################
+*.log
+logs/
+
+############################
+# Temporary Files
+############################
+*.tmp
+*.swp
+*~
+
+############################
+# GPG / Security (IMPORTANT)
+############################
+*.asc
+secring.gpg
+pubring.gpg
+*.kbx
+
+############################
+# Local Maven Settings (NEVER COMMIT)
+############################
+.m2/
+settings.xml
+
+############################
+# Environment files
+############################
+.env
+.env.local
