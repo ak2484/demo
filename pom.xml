@@ -5,7 +5,7 @@
 
     <groupId>io.github.ak2484</groupId>
     <artifactId>spring-boot-clean-response-starter</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>spring-boot-clean-response-starter</name>
